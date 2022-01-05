@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+::selection{
+    color: transparent;
+    /* background-color: #003147; */
+    text-shadow: 0 0 1.9px rgb(43, 41, 41);
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+h5{
+    font-family: 'Roboto', sans-serif;
+}
+
+ul li span{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: #7fdbfa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    display: grid;
+    margin: 50px;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+}
+.container .left_side{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+.profile_text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile_text h3{
+    font-weight: 600;
+    margin-bottom: 29px;
+    font-size: 20px;
+    color: rgb(191, 221, 235);
+}
+.profile_text .img_box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile_text .img_box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile_text h2{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+
+.profile_text h2 span{
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.contact_info{
+    padding-top: 40px;
+}
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contact_info ul{
+    position: relative;
+    list-style: none;
+}
+
+.contact_info ul li{
+    position: relative;
+    list-style: none;
+    line-height: 1.5em;
+    margin: 10px 0;
+}
+
+.contact_info ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contact_info ul li span{
+    color: #dcdceb;
+    font-weight: 300;
+}
+
+.contact_info.education li{
+    margin-bottom: 15px;
+}
+
+.contact_info.education h5{
+    color: #caeeff;
+    font-weight: 500;
+}
+
+.contact_info.education h4:nth-child(2){
+    font-size: 14px;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+.contact_info.education h4{
+    font-size: 14px;
+    color: whitesmoke;
+    font-weight: 300;
+}
+
+.contact_info.language .percent{
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background: #201f2b;
+    display: block;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.contact_info.language .percent:hover .container{
+    filter: blur(100%);
+}
+.contact_info.language .percent div{
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(0,137,199);
+background: linear-gradient(99deg, rgba(0,137,199,1) 0%, rgba(115,212,255,1) 50%, rgba(203,239,255,1) 100%);
+}
+
+
+/* the right side code starts here and after this code the resume will be ready */
+
+
+.container .right_side{
+    line-height: 1.5em;
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+
+.tittle2{
+    color: #003147;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+p{
+    color: #645323;
+}
+
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year_company{
+    min-width: 150px;
+    text-align: center;
+}
+
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color: #6b7980;
+    font-weight: 600;
+}
+
+.about .box .text h4{
+    text-transform: uppercase;
+    color: #1878a5;
+    font-size: 16px;
+}
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.skills .box h4{
+    text-transform: uppercase;
+    text-align: center;
+    color: #516068;
+    font-weight: 600;
+    width: 100%;
+    transform: translateX(1px);
+}
+
+.skills .box h4 span{
+    display: none;
+}
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 14px;
+    background-color: #2a3242;
+    border-radius: 12px;
+}
+
+.skills .box:hover span{
+    display: block;
+}
+.skills:hover .box{
+    opacity: 0.2;
+}
+
+.skills .box:hover{
+    opacity: 3;
+    transform: scale(1.11);
+}
+.skills .box:hover h4{
+    font-weight: 800;
+}
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 12px;
+    background: rgb(0,137,199);
+    background: linear-gradient(99deg, rgba(0,137,199,1) 0%, rgba(115,212,255,1) 50%, rgba(203,239,255,1) 100%);
+}
+
+.interest ul{
+    margin-top: 21px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.interest ul li{
+    list-style: none;
+    color: #333;
+    font-weight: 600;
+    margin: 10px 0;
+    transition: 0.4s;
+}
+
+.interest ul li:hover{
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.interest ul li .fa{
+    color: #03a9f4;
+    transition: 0.3s;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .tittle2{
+    margin-bottom: 17px;
+}
